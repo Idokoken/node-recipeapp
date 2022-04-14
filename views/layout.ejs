@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <link rel='stylesheet' href='/css/style.css' >
+    <link rel='stylesheet' href='/css/bootstrap.min.css' >
+      <title>recipe</title>
+   </head>
+   <body>
+      <header>
+      <nav class="navbar navbar-dark bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/images/cloud.png" alt='brand'>
+    </a>
+    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          Food Recipe App
+        </li>  
+      </ul>
+  </div>
+</nav>
+<div class="container my-4" style='width: 50%;'>
+    <form class="d-flex" method='post' action='/'>
+      <input class="form-control me-2" type="search" placeholder="enter meal"  name='meal'>
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+      </header>
+      
+      <main>
+       <%- body%>
+      </main>
+      
+   <footer class='d-flex justify-content-center align-items-center'>
+       <p class='text-white'>Copyright 2022 by Idokoken. All Rights Reserved
+       </p>
+      </footer>
+      
+      <script src='/js/bootstrap.bundle.min.js'></script>
+   </body>
+</html>

@@ -1,0 +1,19 @@
+
+       <div class='container'>
+         <div class='row'>
+      <% if(data) {
+      	data.map((a, i) => {%>
+           <div class="card m-4" style="width: 18rem;">
+  <img src='<%= a.recipe.image%>' class="card-img-top" alt="..." height='200'>
+  <div class="card-body">
+    <h5 class="card-title"><%= a.recipe.label%></h5>
+    <p class="card-text"><%= a.recipe.calories%></p>
+    <a href="<%=a.recipe.uri%>" class="btn btn-primary">view details</a>
+  </div>
+</div>
+<%}) }%>
+         </div>
+       </div>
+      
+      
+      
